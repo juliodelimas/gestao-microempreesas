@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2025-11-10",
+    "hour": "10:00",
+    "type": "Consultoria",
+    "client": "Cliente A"
+  },
+  {
+    "date": "2025-11-10",
+    "hour": "10:00",
+    "type": "Consultoria",
+    "client": "Cliente A"
+  }
+]

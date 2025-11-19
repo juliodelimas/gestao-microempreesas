@@ -1,0 +1,28 @@
+JIRA-9165: Registro de Microempreendedores
+
+ID	Condição	Resultado Esperado	Camada
+1	Tentar fazer um registro com usuário que não foi previamente registrado, preenchendo campos obrigatórios e senha que atende aos requisitos	Sucesso no registro	API
+2	Tentar fazer um registro com usuário que já foi registrado previamente	Falha por duplicidade	API
+
+JIRA-9167: Login de Microempreendedores
+
+ID	Condição	Resultado Esperado	Camada
+1	Autenticar com e-mail e senha válidos	Login efetuado e sessão iniciada	API
+2	Rejeitar autenticação com credenciais inválidas	Falha de autenticação	API
+3	Bloquear login após 3 tentativas inválidas consecutivas	Acesso temporariamente bloqueado por 15 minutos	API
+
+JIRA-9169: Agendamento de Serviços para Clientes
+
+ID	Condição	Resultado Esperado	Camada
+1	Criar agendamento informando data, hora, tipo de serviço e cliente	Agendamento criado com sucesso	API
+2	Impedir criação de agendamento com conflito de horário para mesmo serviço ou cliente	Falha por conflito de agenda	API
+4	Exigir vínculo do agendamento a um cliente e a um tipo de serviço	Falha por ausência de relacionamento obrigatório	API
+5	Rejeitar agendamento quando faltar qualquer campo mínimo	Falha por ausência de campos obrigatórios	Web
+
+JIRA-9170: Listagem de Agendamento de Serviços
+
+ID	Condição	Resultado Esperado	Camada
+1	Exibir lista contendo data, hora, cliente, serviço e status	Colunas mínimas visíveis	API
+2	Ordenar por data e hora em ordem crescente por padrão	Ordenação aplicada automaticamente	API
+3	Filtrar agendamentos com base nos filtros disponíveis de período e status	Lista refletindo filtros aplicados	API
+5	Comportamento quando não houver resultados para listar	Lista vazia com mensagem adequada	API

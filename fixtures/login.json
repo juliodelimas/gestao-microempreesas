@@ -1,0 +1,12 @@
+[
+  {
+    "email": "joao.teste@example.com",
+    "senha": "SenhaForte123",
+    "valido": true
+  },
+  {
+    "email": "joao.teste@example.com",
+    "senha": "SenhaErrada",
+    "valido": false
+  }
+]

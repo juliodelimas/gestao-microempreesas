@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "João Teste",
+    "cpfCnpj": "12345678901",
+    "email": "joao.teste@example.com",
+    "senha": "SenhaForte123"
+  },
+  {
+    "nome": "Maria Existente",
+    "cpfCnpj": "98765432100",
+    "email": "maria.existente@example.com",
+    "senha": "SenhaForte123!"
+  }
+]
