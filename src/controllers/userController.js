@@ -4,7 +4,7 @@ module.exports = {
   async register(req, res, next) {
     try {
       const user = await userService.register(req.body);
-      res.status(201).json({ id: user.id, nome: user.nome, cpfCnpj: user.cpfCnpj, email: user.email });
+      res.status(200).json({ id: user.id, nome: user.nome, cpfCnpj: user.cpfCnpj, email: user.email });
     } catch (err) {
       next(err);
     }
