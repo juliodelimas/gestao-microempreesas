@@ -23,7 +23,7 @@ jobs:
 
       - name: Subir API em background
         run: |
-          npm run &
+          npm start &
           sleep 10
 
       - name: Rodar testes funcionais
